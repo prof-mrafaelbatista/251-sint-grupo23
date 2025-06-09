@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block page_title %}Projeto Final IP{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Projeto Final IP</h1>
+    <p>A linguagem que entende os humanos e encanta as máquinas, uma ponte entre ideias e realidade com clareza, leveza e muita criatividade.</p>
+    <a href="{{ url_for('educational') }}" class="cta-button">Avançar</a>
+</section>
+
+<section class="features">
+    <h2 class="section-title">Recursos</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Educação</h3>
+            <p>Explore conteúdos educativos para aprender mais sobre Python e tecnologia.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>Perguntas e Respostas</h3>
+            <p>Faça perguntas e obtenha respostas inteligentes diretamente do Gemini.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h3>Dicionário</h3>
+            <p>Consulte e gerencie termos importantes no dicionário técnico.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

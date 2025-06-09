@@ -1,0 +1,14 @@
+{% extends "base_dic.html" %}
+
+{% block content %}
+    <h1>Dicionário de Termos</h1>
+    {% if termos %}
+        <ul>
+            {% for termo, definicao in termos %}
+                <li><strong>{{ termo }}</strong>: {{ definicao }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>O dicionário está vazio. Que tal <a href="{{ url_for('adicionar') }}">adicionar um novo termo</a>?</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base_dic.html" %}
+
+{% block content %}
+    <h1>Adicionar Novo Termo</h1>
+    <form method="POST" action="{{ url_for('adicionar') }}">
+        <label for="termo">Termo:</label>
+        <input type="text" id="termo" name="termo" required>
+
+        <label for="definicao">Definição:</label>
+        <textarea id="definicao" name="definicao" rows="5" required></textarea>
+
+        <input type="submit" value="Adicionar Termo">
+    </form>
+{% endblock %}
